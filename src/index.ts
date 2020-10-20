@@ -1,8 +1,5 @@
 import { useRecoilTransactionObserver_UNSTABLE, Snapshot, MutableSnapshot, RecoilState } from 'recoil'
-import forEach from 'lodash/forEach'
-import isEmpty from 'lodash/isEmpty'
-import includes from 'lodash/includes'
-import keys from 'lodash/keys'
+import { forEach, isEmpty, keys, includes } from 'lodash'
 
 export interface RecoilPersistStateProps {
   recoilValues?: RecoilState<any>[]

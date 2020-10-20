@@ -1,6 +1,6 @@
 {
   "name": "recoil-persist-state",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "persist recoil states with localStorage",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
