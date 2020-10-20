@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "module": "es6",
-    "moduleResolution": "Node",
     "target": "es5",
-    "allowJs": true,
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "declaration": true,
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "removeComments": true,
     "downlevelIteration": true,
     "sourceMap": true,
-    "declaration": true,
     "outDir": "./dist"
   },
   "include": [

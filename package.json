@@ -1,6 +1,6 @@
 {
   "name": "recoil-persist-state",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "persist recoil states with localStorage",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.json",
     "prepare": "yarn build"
   }
 }
