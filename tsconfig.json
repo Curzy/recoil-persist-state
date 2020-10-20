@@ -3,14 +3,13 @@
     "module": "es6",
     "moduleResolution": "Node",
     "target": "es5",
-    "jsx": "react",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "removeComments": true,
     "downlevelIteration": true,
     "sourceMap": true,
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "./dist"
   },
   "include": [
     "src"
