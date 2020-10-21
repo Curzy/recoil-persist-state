@@ -58,6 +58,6 @@ export const App = () => {
 }
 ```
 
-## References
+## Related
 - [https://recoiljs.org/docs/guides/persistence](https://recoiljs.org/docs/guides/persistence)
-- [recoil-persist](https://github.com/polemius/recoil-persist)
+- [recoil-persist](https://github.com/polemius/recoil-persist) (written with [useTransactionObservation_DEPRECATED](https://github.com/facebookexperimental/Recoil/commit/ddae6de90211e5b01737b4b19323aaead35fbbeb#diff-40f9c0c7ffba5f8f99a9c4fdc8424b7b27d2618d647b94ae9860401c0152d7ceL433-R433))
