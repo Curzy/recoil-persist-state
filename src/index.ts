@@ -9,9 +9,9 @@ export interface RecoilPersistStateProps {
   }
 }
 export function RecoilPersistState(props?: RecoilPersistStateProps) {
-  const { recoilValues = [], config: { key, storage } = { key: 'recoil-persist-state', storage: localStorage } } =
-  props || {}
-  function persistState({ snapshot }: { snapshot: Snapshot; previousSnapshot: Snapshot }): void {
+  const { recoilValues = [], config: { key, storage } = { key: 'recoil-persist-state', storage: localStorage } } = props || {}
+  function persistState(opts: { snapshot: Snapshot; previousSnapshot: Snapshot }): void {
+    const { snapshot } = opts
     const newData: {
       [key: string]: any
     } = {}
@@ -35,7 +35,8 @@ export function RecoilPersistState(props?: RecoilPersistStateProps) {
     return null
   }
 
-  function initializeState({ set }: MutableSnapshot) {
+  function initializeState(mutableSnapshot: MutableSnapshot) {
+    const { set } = mutableSnapshot
     const values = storage.getItem(key)
     try {
       const storedStates = JSON.parse(values)

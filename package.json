@@ -1,21 +1,28 @@
 {
   "name": "recoil-persist-state",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "persist recoil states with localStorage",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "repository": "git@github.com:Curzy/recoil-persist-state.git",
   "author": "Curzy <cms9597@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "recoil",
+    "react",
+    "state"
+  ],
   "dependencies": {
     "@types/lodash": "^4.14.162",
-    "@types/recoil": "^0.0.1",
     "lodash": "^4.17.20",
-    "recoil": "^0.0.13",
     "typescript": "^4.0.3"
   },
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "prepare": "yarn build"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.9.55",
+    "recoil": "^0.1.2"
   }
 }
